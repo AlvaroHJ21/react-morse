@@ -19,8 +19,8 @@ function App() {
 
   return (
     <div className="container m-auto max-w-screen-sm w-[90%] flex flex-col justify-center h-screen">
-      <h1 className="text-5xl text-center mb-16">Código Morse <span className='text-7xl font-bold'>.-</span> Traductor</h1>
-      <div className="flex gap-6 justify-center">
+      <h1 className="mb-16 text-5xl text-center">Código Morse <span className='font-bold text-7xl'>.-</span> Traductor</h1>
+      <div className="flex justify-center gap-6">
         <div className="flex-1">
           <div className="flex gap-4 mb-2">
             <h2>Texto</h2>
@@ -39,7 +39,7 @@ function App() {
             <button>
               <i className="fa fa-play"></i>
             </button>
-            <ButtonCopy text={text} />
+            <ButtonCopy text={morse} />
           </div>
           <InputArea value={morse} onChange={(e) => handleChangeMorse(e.target.value)} />
         </div>
